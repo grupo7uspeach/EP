@@ -6,13 +6,13 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link href="css/geral.css" rel="stylesheet">
 <meta charset="UTF-8">
+<title>SIAF - Sistema Interno de Avaliação de Funcionários</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
-      <a class="navbar-brand" href="#">SIAF</a>
+      <div class="navbar-brand">SIAF</div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -45,7 +45,7 @@
             <h1>Bem-vindo ao SAF!</h1>
             <hr>
             <p class="text-justify">
-                SIAF é o nosso sistema interno de avaliação de funcionários! Aqui você se encontra no sistema de avaliação de funcionários, para que a avaliação seja completa será necessário que você responda três questionários escolhendo entre 1 e 5 (sendo 1 uma resposta negativa e 5 uma resposta positiva) sobre os funcionários listados, a avaliação será concluída uma vez que todos os questionários sejam respondidos sobre os funcionários pendentes na sua lista.                    
+                SIAF é o nosso Sistema Interno de Avaliação de Funcionários! Aqui você se encontra no sistema de avaliação de funcionários, para que a avaliação seja completa será necessário que você responda três questionários escolhendo entre 1 e 5 (sendo 1 uma resposta negativa e 5 uma resposta positiva) sobre os funcionários listados, a avaliação será concluída uma vez que todos os questionários sejam respondidos sobre os funcionários pendentes na sua lista.                    
             </p>
             <p class="text-justify">
                 Selecione da lista de funcionários para começar a avaliação deste funcionário, as informações são salvas toda vez que você concluir ou sair do questionário aberto, estes serão marcados como não concluídos para facilitar o retorno para a avaliação.
@@ -56,9 +56,9 @@
             <label for="funcs">Lista de funcionários</label>
             <select class="form-control" id="funcs">
                 <option>Ana Maria</option>
-                <option>Antônio da Silva</option>
-                <option>João Vitor</option>
-                <option>Maria Paula</option>
+                <option disabled>Antônio da Silva</option>
+                <option disabled>João Vitor</option>
+                <option disabled>Maria Paula</option>
             </select> 
             <button class="btn btn-success float-right mt-3" type="submit" id="funcs">Avaliar</button>              
         </form>     
